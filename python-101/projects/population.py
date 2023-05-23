@@ -1,0 +1,12 @@
+pop = 380123456
+year = (60*60*24*365)
+die = (year/12)
+born = (year/6)
+mig = (year/40)
+growth = (born+mig-die)
+year_1 = (pop+growth)
+year_2 = (year_1+growth)
+year_3 = (year_2+growth)
+print(year_1)
+print(year_2)
+print(year_3)
