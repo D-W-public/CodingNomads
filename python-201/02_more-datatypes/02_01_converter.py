@@ -4,3 +4,8 @@
 # Do you notice any difference to iterating over the string?
 
 string = "codingnomads"
+tup = tuple(string)
+
+print(tup[::-1])
+print(tup[1:3])
+print(tup[-3])

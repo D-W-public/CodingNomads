@@ -7,4 +7,18 @@
 
 from resources import randlist
 
-print(randlist)
+lst = randlist
+
+print("Random integer list: ",lst)
+
+#calculate sum
+
+print("Sum of list is: ", sum(lst))
+
+#sorting
+
+lst.sort()
+
+# prtinng the last element of the list. after sorting = largest number
+
+print("Largest number in list: ", lst[-1])
