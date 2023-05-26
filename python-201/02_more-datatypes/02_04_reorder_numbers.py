@@ -6,3 +6,16 @@
 #
 # Example input:  1,2,3,4,5,6,7,8,9,10
 # Example output: 2,4,6,8,10,9,7,5,3,1
+
+lst1=[]
+
+c = 10
+
+while c > 0:
+    user_input = int(input("Please enter int: "))
+    lst1.append(user_input)
+    c -= 1
+
+print(lst1[1::2]+lst1[-2::-2])
+
+
