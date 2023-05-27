@@ -16,4 +16,10 @@ from resources import randlist
 
 print(randlist)
 
+
 # Write your code below here
+
+randlist.sort()
+
+print(randlist)
+

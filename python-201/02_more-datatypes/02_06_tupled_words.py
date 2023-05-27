@@ -4,3 +4,15 @@
 
 # input = "hello world"
 # result_list = [('h', 'e', 'l', 'l', 'o'), ('w', 'o', 'r', 'l', 'd')]
+
+
+test_string = input("Please enter a sentence: ")
+
+lst1 = test_string.split()
+
+lst2 = []
+
+for word in lst1:
+    lst2.append(tuple(word))
+
+print(lst2)

@@ -4,3 +4,21 @@
 # 2. Use a loop and a second list to solve it more manually
 
 list_ = [1, 2, 3, 4, 3, 4, 5]
+
+
+
+#Loop_solution
+
+list_u=[]
+
+for x in list_:
+    if x not in list_u:
+        list_u.append(x)
+    
+print(list_u)
+
+#Data_type solution
+
+s1 = set(list_)
+
+print(s1)
