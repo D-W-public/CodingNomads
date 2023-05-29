@@ -11,11 +11,12 @@ def game():
 # Display a message that greets them and introduces them to the game world.
     print(f"Welcome {player_name}. I hope you are ready for an adventure!", "\n","Let's go!")
 
-    print(
-    "You are ventureing down a dungeon, whith a torch in you hand.","\n", 
-    "The walls are scorched and there are bloody handprints everywhere.", "\n", 
-    "You follow the trail of carnage and find two doors."
-    )
+    print("""
+    You are ventureing down a dungeon, whith a torch in you hand. 
+    
+    The walls are scorched and there are bloody handprints everywhere. 
+    
+    You follow the trail of carnage and find two doors.""")
 
     door = True
 # Present them with a choice between two doors.
@@ -48,6 +49,7 @@ def game():
                     There is some thing etched on the blade
                     
                     DRAGONBANE
+                    
                     You leave the room feeling like a million gold pieces.""")
                     
                     inventory.append(sword)
