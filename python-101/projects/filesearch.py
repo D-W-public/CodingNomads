@@ -16,10 +16,15 @@
 # This program should work for any specified folder on your computer.
 
 from pathlib import Path
+import os
 
 target = Path("/home/jayram/Desktop")
 
+path_list = []
+
 for file in target.rglob("*"):
     if file.suffix == ".jpg":
-        print(file)
+        path_list.append(os.path.abspath(file))
+        
+print(*path_list, sep = "\n")
 
