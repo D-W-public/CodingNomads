@@ -1,5 +1,5 @@
 # Build a CLI RPG game following the instructions from the course.
-import sys
+
 # Ask the player for their name.
 
 def game():
@@ -32,9 +32,9 @@ def game():
                 door = True
 
             elif sword not in inventory:    
-                interaction_1 = input("You found an empty room.\n Would you like to look arround, or would you rather go back? \n ")
+                interaction_1 = input("You found an empty room.\n Would you like to look around, or would you rather go back? \n ")
                 interaction_1 = interaction_1.lower()
-                if interaction_1 == "look arround":
+                if interaction_1 == "look around":
                     print(f"""
                     You inspect the room and see something shining in a pile of bones.
                     It's calling you.
@@ -57,6 +57,8 @@ def game():
                 elif interaction_1 == "go back":
                     print("You walk back to the hallway... \n Empty handed!")
                     door = True
+                else:
+                    door == "left"
 # If they choose the right door, then they encounter a dragon.
 # They can choose to fight or leave 
  
