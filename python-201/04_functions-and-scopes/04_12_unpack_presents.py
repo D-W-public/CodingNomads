@@ -7,3 +7,8 @@ def congratulate(name, age):
     return f"Today {name} is {age} years old.\nHappy Birthday!"
 
 user = {"name": "Adelheid", "age": 22}
+
+name = user["name"]
+age = user["age"]
+
+print(congratulate(name, age))

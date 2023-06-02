@@ -4,8 +4,31 @@
 
 example_list = [1, 2, 3, 4, 5, 6, 7]
 
-def stats():
-  # define the function here
-  pass
+
+def stats(numbers):
+
+# define the function here
+  """Takes alist of numbers and finds the smallest and largest number.
+    Also calculates the sum of the list
+
+    Args:
+      Takes lists
+
+    Returns:
+      f-string with results
+    """
+  largest = max(numbers)
+  smallest = min(numbers)
+  sum_ = sum(numbers)
+
+  result = f"""
+  The largest number is  : {largest}
+  The smallest number is : {smallest}
+  The sum is             : {sum_}"""
+  
+  return result
+
 
 # call the function below here
+
+print(stats(example_list))
