@@ -3,3 +3,7 @@
 
 colors = ["neon orange", "spring green"]
 sizes = ["S", "M", "L"]
+
+shop_list =[(x,y) for x in colors for y in sizes]
+
+print(shop_list)
