@@ -10,3 +10,7 @@
 
 s = {1, 2, 3, 4}
 t = {2, 3, 4, 5, 7}
+
+s_t = {num**2 for num in s|t if num > 2}
+
+print(s_t)
