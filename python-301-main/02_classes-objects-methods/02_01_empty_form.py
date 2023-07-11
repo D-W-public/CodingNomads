@@ -10,3 +10,19 @@
 #
 # Model such an application form as a Python class below, and instantiate
 # a few objects from it.
+class DocForm:
+
+    def __init__(self, name, age, sex):
+        self.name = name
+        self.age = age
+        self.sex = sex
+
+    def __str__(self):
+        return f"Patient: {self.name}, Age: {self.age}, Sex: {self.sex}"
+    
+    def __repr__(self):
+        return f"\n Patient {self.name} \n Age: {self.age} \n Sex: {self.sex} \n"
+
+H = DocForm("Herbert", 50, "M")
+
+print(repr(H))

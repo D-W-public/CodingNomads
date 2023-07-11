@@ -14,3 +14,5 @@ class Ingredient:
     def __str__(self):
         return f"{self.name} ({self.amount})"
     
+    def __repr__(self):
+        return f"Ingredient(name={self.name}, amount={self.amount})"
