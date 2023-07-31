@@ -16,3 +16,17 @@ class Ingredient:
     
     def __repr__(self):
         return f"Ingredient(name={self.name}, amount={self.amount})"
+
+class Spice(Ingredient):
+    """Models a spice to flavor your food."""
+
+    def grind(self):
+        print(f"You have now {self.amount} of ground {self.name}.")
+
+
+
+class Vegeteable(Ingredient):
+    """ Veggie class """
+    def cut(self):
+        """ Cuts the Veggie """
+        print(f"{self.name} is cut.")

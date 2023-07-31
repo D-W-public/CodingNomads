@@ -25,3 +25,11 @@ class Spice(Ingredient):
     def grind(self):
         print(f"You have now {self.amount} of ground {self.name}.")
 
+
+
+class Vegeteable(Ingredient):
+
+    def cut(self):
+        """ Cuts the Veggie """
+        print(f"{self.name} is cut.")
+        
