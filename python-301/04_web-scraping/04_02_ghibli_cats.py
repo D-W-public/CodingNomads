@@ -7,3 +7,10 @@
 # appear in Studio Ghibli films.
 
 BASE_URL = "https://ghibliapi.herokuapp.com/"
+
+
+import requests
+from pprint import pprint
+
+response = requests.get("https://ghibliapi-iansedano.vercel.app/api/films")
+pprint(response.json())
