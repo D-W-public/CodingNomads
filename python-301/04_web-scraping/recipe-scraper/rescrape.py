@@ -9,3 +9,14 @@
 # custom Python classes.
 
 URL = "https://codingnomads.github.io/recipes"
+
+import re
+import json
+
+def ingredient_look_up(recipes, Ingredient):
+    matches = []
+
+    for recipe in recipes:
+        if "recipe" in recipe:
+            recipe_text = recipe["recipe"]
+            ingredient_lines = re.findall(r'INGREDIENTS:(.*?)\n\n', recipe_text, re-DOTALL | re.IGNORECASE)
