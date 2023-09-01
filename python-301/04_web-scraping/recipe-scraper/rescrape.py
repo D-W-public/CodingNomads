@@ -23,22 +23,22 @@ def ingredient_look_up(recipes, ingredient):
 
         for ingredient_line in ingredient_lines:
             if re.search(r'\b' + re.escape(ingredient) + r'\b', ingredient_line, re.I):
-                matches.append((recipe["title"], ingredient_line.strip()))
-    return matches, recipe_text
+                matches.append((recipe["title"], recipe["recipe"]))
+    return matches
 
 def main():
 
     with open("/home/jay_ram/Documents/CodingNomads/scraped_recipes.json", "r") as file:
         recipes = json.load(file)
 
-    target_ingredient = input("Enter ingredient: ")
+    target_ingredient = input(f"Welcome to the recipe-libary\nPlease enter ingredient: ")
 
     matching_recipes = ingredient_look_up(recipes, target_ingredient)
 
     if matching_recipes:
         print(f"\nFound {len(matching_recipes)} recipes using {target_ingredient}\n")
-        for recipe_title, ingredient_line, recipe_recipe in matching_recipes:
-            print(f"Name: {recipe_title}\n\n{recipe_text}")
+        for recipe_title, recipe_recipe in matching_recipes:
+            print(f"\nName: {recipe_title}\n\n{recipe_recipe}\n"+("-"*66))
 
 if __name__ == "__main__":
     main()
