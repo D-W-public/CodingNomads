@@ -1,0 +1,6 @@
+https://ghibliapi-iansedano.vercel.app/api/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49
+https://ghibliapi-iansedano.vercel.app/api/films/ea660b10-85c4-4ae3-8a5f-41cea3648e3e
+https://ghibliapi-iansedano.vercel.app/api/films/ff24da26-a969-4f0e-ba1e-a122ead6c6e3
+https://ghibliapi-iansedano.vercel.app/api/films/90b72513-afd4-4570-84de-a56c312fdf81
+https://ghibliapi-iansedano.vercel.app/api/films/2de9426b-914a-4a06-a3a0-5e6d9d3886f6
+https://ghibliapi-iansedano.vercel.app/api/films/790e0028-a31c-4626-a694-86b7a8cada40
