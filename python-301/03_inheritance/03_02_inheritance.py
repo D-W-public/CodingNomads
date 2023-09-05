@@ -15,4 +15,13 @@ class Movie():
     def __init__(self, year, title):
         self.year = year
         self.title = title
-        
+        self.pg = 13
+
+class ActionMovie(Movie):
+
+    def __init__(self, year, title):
+        super.__init__(year,title)
+        self.pg = 18
+
+class RomCom(Movie):
+    pass

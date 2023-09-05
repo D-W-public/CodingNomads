@@ -12,3 +12,20 @@
 #
 # - A `Vehicle()` parent class, with `Truck()` and `Motorcycle()` child classes.
 # - A `Restaurant()` parent class, with `Gourmet()` and `FastFood()` child classes.
+
+
+class Computer():
+    def __init__(self, cpu, ram, gpu):
+        self.cpu = cpu
+        self.ram = ram
+        self.gpu = gpu
+
+class Laptop(Computer):
+    def __init__(self, cpu, ram, gpu, size):
+        super.__init__(self, cpu, ram, gpu)
+        self.size = size
+
+class GamingLaptop(Laptop):
+    def __init__(self, cpu, ram, gpu, size, benchmark):
+        super.__init__(self, cpu, ram, gpu, size)
+        self.benchmark = benchmark
