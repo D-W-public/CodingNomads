@@ -3,3 +3,5 @@
 # 	I'm a programmer now.
 # 	Yeehaw!
 # 	Coding here I come!
+
+print(f"I'm a programmer now.\nYeehaw!\nCoding here I come!")
