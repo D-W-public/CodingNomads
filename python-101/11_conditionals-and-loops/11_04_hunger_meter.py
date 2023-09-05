@@ -4,14 +4,18 @@
 # print a message that reminds you to
 # declare your hunger levels with a string.
 
+while True:
+    hunger = input("Please enter your hunger level: ")
 
-hunger = input("Please enter your hunger level: ")
-
-if hunger != str(hunger):
-    print("Please enter a string")
-elif hunger == "big":
-    print("Eat the pizza")
-elif hunger == "small":
-    print("Eat the apple")
-else:
-    print("Don't eat anything")
+    try:
+        hunger_as_int = int(hunger)
+        print("Invalid input, please enter a string.")
+    except ValueError:
+        if hunger.lower() == "big":
+            print("Eat the pizza")
+            exit()
+        elif hunger.lower() == "small":
+            print("Eat the apple.")
+            exit()
+        else:
+            print("Invalid input. Please choose between big/small")

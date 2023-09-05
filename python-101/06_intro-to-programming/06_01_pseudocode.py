@@ -6,3 +6,10 @@
 # Break this task up into a couple of steps of pseudocode
 # and write the pseudocode below in code comments.
 # You don't need to write any functional code, just map out the steps.
+
+
+# collect all names
+
+# crate dict with key cute and put all names as Value
+
+# iterate over dict to print adption template for all names in cute
