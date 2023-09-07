@@ -22,4 +22,4 @@ r = client.post("https://www.reddit.com/api/login", data=user_pass_dict)
 
 j = json.loads(r.content)
 
-print(j)
+pprint(j)
