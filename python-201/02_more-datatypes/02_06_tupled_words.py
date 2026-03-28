@@ -4,3 +4,7 @@
 
 # input = "hello world"
 # result_list = [('h', 'e', 'l', 'l', 'o'), ('w', 'o', 'r', 'l', 'd')]
+
+text = str(input("Please enter a text: "))
+tup_ls = [tuple(w) for w in text.split()]
+print(tup_ls)
