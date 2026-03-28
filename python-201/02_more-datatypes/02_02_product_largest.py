@@ -7,4 +7,7 @@
 
 from resources import randlist
 
-print(randlist)
+list_1 = randlist
+
+print(max(list_1))
+print(sum(list_1))
