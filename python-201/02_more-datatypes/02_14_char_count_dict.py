@@ -4,3 +4,9 @@
 #
 # user_input = "hello"
 # result = {"h": 1, "e": 1, "l": 2, "o": 1}
+from collections import Counter
+
+user_input = input("Please enter a Text: ")
+result = dict(Counter(user_input))
+
+print(result)
