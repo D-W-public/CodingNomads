@@ -1,7 +1,7 @@
 # CHALLENGE: Write a script that sorts a dictionary into a
 # list of tuples based on the dictionary's values. For example:
 
-# input_dict = {"item1": 5, "item2": 6, "item3": 1}
+input_dict = {"item1": 5, "item2": 6, "item3": 1}
 # result_list = [("item3", 1), ("item1", 5), ("item2", 6)]
 
 # Check out the Python docs and see whether you can come up with a solution,
