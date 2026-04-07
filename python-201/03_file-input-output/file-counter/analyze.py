@@ -3,5 +3,7 @@
 import csv
 
 with open("filecounts.csv", "r") as csvfile:
-    reader = csv.DictWriter(csvfile, fieldnames=["ISO", "ZIP", "MKV", "PNG", "JSON"])
+    reader = csv.DictReader(csvfile, fieldnames=["ISO", "ZIP", "MKV", "PNG", "JSON"])
     counts = list(reader)
+
+print(counts)
