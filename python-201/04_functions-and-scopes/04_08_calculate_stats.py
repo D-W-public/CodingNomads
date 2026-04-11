@@ -4,8 +4,15 @@
 
 example_list = [1, 2, 3, 4, 5, 6, 7]
 
-def stats():
-  # define the function here
-  pass
 
-# call the function below here
+def stats(e_list):
+    # define the function here
+    print(max(e_list))
+    print(min(e_list))
+    print(sum(e_list))
+    pass
+
+
+# call the functionbelow here
+
+stats(example_list)
